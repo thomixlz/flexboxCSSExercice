@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+
+.zoneHeader {
+    background-color: red;
+    height: 180px;
+
+    overflow: hidden;
+}
+
+.zoneTitleHeader {
+    background-color: transparent;
+    height: 150px;
+
+    box-sizing: border-box;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+
+}
+
+.zoneTitleHeader h1 {
+    text-transform: uppercase;    
+}
+
+.zoneTitleHeader h3 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+/**/
+
+.zoneNavHeader{
+    background-color: transparent;  
+    height: 30px;
+
+    display: flex;
+    overflow: hidden;
+
+}
+
+.zoneNavHeader a {
+    border: solid black 1px;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* MAIN */
+
+.zoneMain{
+    background-color: transparent;
+
+    display: flex;
+
+}
+
+.asideText1, .asideText2{
+    max-width: 250px;
+    height: 100%;
+}
+
+.middleText1{
+    background-color: green;
+}
+
+.middleText2{
+    background-color: blue;
+}
+
+.middleText3{
+    background-color: pink;
+}
+
+.asideText1 {
+    background-color: yellow;
+}
+
+.asideText2{
+    background-color: purple;
+}
+
+.zoneMiddleText{
+    background-color: #add8e6;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+
+.top{
+    width: 66.66%;
+    display: flex;
+}
+
+.bottom{
+    width: 33.33%;
+}
+
+.middleText1, .middleText2{
+    width: 50%
+}
+
+.middleText3{
+    width: 100%;
+}
+
+.middleText1, .middleText2, .middleText3, .asideText1, .asideText2{
+    box-sizing: border-box;
+    padding: 5px;
+    border-top: solid black 1px;
+   
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #90ee90;
+    height: 75px;
+    border-top: solid black 1px;
+}
+
+footer p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.responsive {
+    display: none;
+}
+
+/******/
+
+
+@media (max-width: 930px) {
+
+    .responsive{
+        display: block;
+    }
+
+    .asideText1, .asideText2{
+        max-width: 150px;
+    }
+
+    .zoneMiddleText{
+        flex-direction: column;
+    }
+    .top{
+        width: 100%;
+        height: 80%;
+    }
+
+    .bottom{
+        width: 100%;
+        height: 20%;
+    }
+} 
